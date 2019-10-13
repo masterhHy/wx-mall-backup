@@ -316,8 +316,7 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.6</version>
                 <configuration>
-                    <warSourceDirectory>src/main/we
-                        bapp</warSourceDirectory>
+                    <warSourceDirectory>src/main/webapp</warSourceDirectory>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
@@ -339,6 +338,7 @@
     <profiles>
         <profile>
             <id>prod</id>
+            <!--部署到linux 需要：-->
             <build>
                 <plugins>
                     <plugin>
